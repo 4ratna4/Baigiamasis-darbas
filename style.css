@@ -1,0 +1,209 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+
+  body {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+header {
+    width: 100%;
+    background-color: yellow;
+    color: green;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-left {
+    display: flex;
+    gap: 30px;
+}
+
+h1 {
+    padding: 0px;
+    margin: 0px;
+}
+.options {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.options li a {
+text-decoration: none;
+color: green;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer{
+    color: green;
+    background-color: yellow;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.skelbimas {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid grey;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.skelbimas img {
+    height: 150px;
+    width: 150px;
+    border: 1px solid grey;
+}
+
+.skelbimai-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+
+.vieta {
+    width: 15%;
+    color: black;
+    font-size: 16px;
+
+}
+
+.info-wrapper {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.pavadinimas {
+    color: green;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.kaina {
+    font-weight: 700;
+    color: black;
+}
+
+.skelbimas-section {
+    min-height: calc(100vh - 100px);
+}
+
+.skelbimas-wrapper {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 550px;
+    border: 1px solid grey;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.skelbimas-photo {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skelbimas-content {
+    display: grid;
+   grid-template-areas:
+   "a b"
+   "c b"
+   "d d";
+   grid-template-columns: 4fr 1fr;
+   grid-template-rows: 2fr 1fr 3fr;
+   padding: 20px;
+}
+
+.daikto-pavadinimas {
+    grid-area: a;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.daikto-kaina {
+    grid-area: b;
+    color: green;
+    font-size: 28px;
+    font-weight: 700;
+    justify-self: center;
+    align-self: center;
+}
+
+.daikto-vieta {
+    grid-area: c;
+    font-size: 14px;
+}
+
+.daikto-aprasymas {
+    grid-area: d;
+    font-size: 16px;
+}
+
+.naujas-skelbimas-forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.naujas-skelbimas-forma input {
+    width: 70%;
+}
+
+button {
+    width: 20%;
+    background-color: yellow;
+    color: green;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.success-message {
+color: green;
+}
+
+.delete-button-wrapper {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .options {
+      display: flex;
+      flex-direction: column;
+    }
+    .header-left {
+        display: flex;
+        flex-direction: column;
+    }
+  
+ .skelbimas .vieta {
+    order: 2;
+ }
+    }
+  

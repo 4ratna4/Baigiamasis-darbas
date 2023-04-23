@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Skelbimas</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="header-left">
+                <div class="img">
+                    <img src="https://static.skelbiu.lt/static/images/svg/logotipas_ua.svg?v=4" alt="" class="logo">
+                </div>
+                <h1 class="header" style="color: green">Skelbimų portalas</h1>
+            </div>
+        </a>
+        <div class="header-right">
+            <ul class="options">
+                <li class="naujas-skelbimas"> <a href="./naujasSkelbimas.html">Naujas skelbimas</a></li>
+                <li class="visi-skelbimai"> <a href="./index.html">Visi skelbimai</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="skelbimas-section">
+        <div id="skelbimas-wrapper" class="skelbimas-wrapper">
+            <div id="photo" class="skelbimas-photo"></div>
+            <div class="skelbimas-content">
+                <div id="daikto-pavadinimas" class="daikto-pavadinimas">Daikto pavadinimas</div>
+                <div id="daikto-kaina" class="daikto-kaina">Daikto kaina</div>
+                <div id="daikto-vieta" class="daikto-vieta">vieta</div>
+                <div id="daikto-aprasymas" class="daikto-aprasymas">Daikto aprasymas</div>
+            </div>
+        </div>
+     </section>
+
+     <div class="delete-button-wrapper">
+        <button id="delete-button", class = delete-button>Ištrinti skelbimą</button>
+        <div id="success-message" class="success-message"></div>
+    </div>
+
+    <footer>
+        <div>©Skelbiu</div>
+        <div>2023</div>
+      </footer>
+    <script src="script2.js"></script>
+</body>
+
+</html>
